@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F23AA05D1951FF6D0071B7A6 /* Dragon2.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AA05C1951FF6D0071B7A6 /* Dragon2.m */; };
 		F24F0243195150E1004962B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0242195150E1004962B1 /* Foundation.framework */; };
 		F24F0245195150E1004962B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0244195150E1004962B1 /* CoreGraphics.framework */; };
 		F24F0247195150E1004962B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0246195150E1004962B1 /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		F24F0267195150E1004962B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0246195150E1004962B1 /* UIKit.framework */; };
 		F24F026F195150E1004962B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F24F026D195150E1004962B1 /* InfoPlist.strings */; };
 		F24F0271195150E1004962B1 /* DealMakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F24F0270195150E1004962B1 /* DealMakerTests.m */; };
+		F24F0288195160C6004962B1 /* DragonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24F0287195160C6004962B1 /* DragonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F23AA05B1951FF6D0071B7A6 /* Dragon2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon2.h; sourceTree = "<group>"; };
+		F23AA05C1951FF6D0071B7A6 /* Dragon2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon2.m; sourceTree = "<group>"; };
 		F24F023F195150E1004962B1 /* DealMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24F0242195150E1004962B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F24F0244195150E1004962B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +59,8 @@
 		F24F026C195150E1004962B1 /* DealMakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DealMakerTests-Info.plist"; sourceTree = "<group>"; };
 		F24F026E195150E1004962B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F24F0270195150E1004962B1 /* DealMakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DealMakerTests.m; sourceTree = "<group>"; };
+		F24F0286195160C6004962B1 /* DragonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonViewController.h; sourceTree = "<group>"; };
+		F24F0287195160C6004962B1 /* DragonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +126,11 @@
 				F24F0257195150E1004962B1 /* Main_iPad.storyboard */,
 				F24F025A195150E1004962B1 /* ViewController.h */,
 				F24F025B195150E1004962B1 /* ViewController.m */,
+				F24F0286195160C6004962B1 /* DragonViewController.h */,
+				F24F0287195160C6004962B1 /* DragonViewController.m */,
 				F24F025D195150E1004962B1 /* Images.xcassets */,
+				F23AA05B1951FF6D0071B7A6 /* Dragon2.h */,
+				F23AA05C1951FF6D0071B7A6 /* Dragon2.m */,
 				F24F0249195150E1004962B1 /* Supporting Files */,
 			);
 			path = DealMaker;
@@ -256,6 +266,8 @@
 				F24F025C195150E1004962B1 /* ViewController.m in Sources */,
 				F24F0253195150E1004962B1 /* AppDelegate.m in Sources */,
 				F24F024F195150E1004962B1 /* main.m in Sources */,
+				F23AA05D1951FF6D0071B7A6 /* Dragon2.m in Sources */,
+				F24F0288195160C6004962B1 /* DragonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +406,7 @@
 				GCC_PREFIX_HEADER = "DealMaker/DealMaker-Prefix.pch";
 				INFOPLIST_FILE = "DealMaker/DealMaker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,6 +420,7 @@
 				GCC_PREFIX_HEADER = "DealMaker/DealMaker-Prefix.pch";
 				INFOPLIST_FILE = "DealMaker/DealMaker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +484,7 @@
 				F24F0276195150E1004962B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F24F0277195150E1004962B1 /* Build configuration list for PBXNativeTarget "DealMakerTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +493,7 @@
 				F24F0279195150E1004962B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

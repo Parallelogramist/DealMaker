@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize text, label;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonClick:(id)sender {
+    
+    self.label.text = self.text.text;
+    
+    [self.text resignFirstResponder];
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.text resignFirstResponder];
 }
 
 @end
