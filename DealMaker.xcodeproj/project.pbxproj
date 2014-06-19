@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F23AA05D1951FF6D0071B7A6 /* Dragon2.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AA05C1951FF6D0071B7A6 /* Dragon2.m */; };
 		F24F0243195150E1004962B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0242195150E1004962B1 /* Foundation.framework */; };
 		F24F0245195150E1004962B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0244195150E1004962B1 /* CoreGraphics.framework */; };
 		F24F0247195150E1004962B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0246195150E1004962B1 /* UIKit.framework */; };
@@ -37,8 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F23AA05B1951FF6D0071B7A6 /* Dragon2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon2.h; sourceTree = "<group>"; };
-		F23AA05C1951FF6D0071B7A6 /* Dragon2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon2.m; sourceTree = "<group>"; };
 		F24F023F195150E1004962B1 /* DealMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DealMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24F0242195150E1004962B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F24F0244195150E1004962B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,8 +126,6 @@
 				F24F0286195160C6004962B1 /* DragonViewController.h */,
 				F24F0287195160C6004962B1 /* DragonViewController.m */,
 				F24F025D195150E1004962B1 /* Images.xcassets */,
-				F23AA05B1951FF6D0071B7A6 /* Dragon2.h */,
-				F23AA05C1951FF6D0071B7A6 /* Dragon2.m */,
 				F24F0249195150E1004962B1 /* Supporting Files */,
 			);
 			path = DealMaker;
@@ -266,7 +261,6 @@
 				F24F025C195150E1004962B1 /* ViewController.m in Sources */,
 				F24F0253195150E1004962B1 /* AppDelegate.m in Sources */,
 				F24F024F195150E1004962B1 /* main.m in Sources */,
-				F23AA05D1951FF6D0071B7A6 /* Dragon2.m in Sources */,
 				F24F0288195160C6004962B1 /* DragonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

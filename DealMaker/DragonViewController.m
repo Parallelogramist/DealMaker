@@ -9,7 +9,6 @@
 #import "DragonViewController.h"
 
 @interface DragonViewController ()
-
 @end
 
 @implementation DragonViewController
@@ -29,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.dragonLabel.text = @"hello";
+    self.label.text = self.text;
 }
 
 - (void)didReceiveMemoryWarning

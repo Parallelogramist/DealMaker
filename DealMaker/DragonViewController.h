@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface DragonViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *dragonLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) NSString *text;
 
 @end

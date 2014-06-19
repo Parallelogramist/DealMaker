@@ -7,14 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "DragonViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
-@synthesize text, label;
 
 - (void)viewDidLoad
 {
@@ -22,20 +21,19 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([segue.identifier isEqualToString:@"enter"]){
+        
+        DragonViewController *controller = (DragonViewController *)segue.destinationViewController;
+        controller.text = self.textField.text;
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)buttonClick:(id)sender {
-    
-    self.label.text = self.text.text;
-    
-    [self.text resignFirstResponder];
-}
-
-- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self.text resignFirstResponder];
 }
 
 @end
