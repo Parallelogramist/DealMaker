@@ -39,7 +39,7 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self.textField resignFirstResponder];
+    [self.textField resignFirstResponder];//hide keyboard
 }
 
 @end
