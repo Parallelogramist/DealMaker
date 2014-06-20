@@ -28,12 +28,18 @@
         DragonViewController *controller = (DragonViewController *)segue.destinationViewController;
         controller.text = self.textField.text;
     }
+    [self.textField resignFirstResponder];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.textField resignFirstResponder];
 }
 
 @end
