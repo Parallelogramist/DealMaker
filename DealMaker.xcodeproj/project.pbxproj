@@ -14,7 +14,6 @@
 		F24F024F195150E1004962B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F24F024E195150E1004962B1 /* main.m */; };
 		F24F0253195150E1004962B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F24F0252195150E1004962B1 /* AppDelegate.m */; };
 		F24F0256195150E1004962B1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24F0254195150E1004962B1 /* Main_iPhone.storyboard */; };
-		F24F0259195150E1004962B1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24F0257195150E1004962B1 /* Main_iPad.storyboard */; };
 		F24F025C195150E1004962B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24F025B195150E1004962B1 /* ViewController.m */; };
 		F24F025E195150E1004962B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24F025D195150E1004962B1 /* Images.xcassets */; };
 		F24F0265195150E1004962B1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24F0264195150E1004962B1 /* XCTest.framework */; };
@@ -23,6 +22,7 @@
 		F24F026F195150E1004962B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F24F026D195150E1004962B1 /* InfoPlist.strings */; };
 		F24F0271195150E1004962B1 /* DealMakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F24F0270195150E1004962B1 /* DealMakerTests.m */; };
 		F24F0288195160C6004962B1 /* DragonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24F0287195160C6004962B1 /* DragonViewController.m */; };
+		F29FC0F0195FB709008113E3 /* UsernamePrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = F29FC0EF195FB709008113E3 /* UsernamePrompt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		F24F0251195150E1004962B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F24F0252195150E1004962B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F24F0255195150E1004962B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		F24F0258195150E1004962B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		F24F025A195150E1004962B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F24F025B195150E1004962B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F24F025D195150E1004962B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -58,6 +57,8 @@
 		F24F0270195150E1004962B1 /* DealMakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DealMakerTests.m; sourceTree = "<group>"; };
 		F24F0286195160C6004962B1 /* DragonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonViewController.h; sourceTree = "<group>"; };
 		F24F0287195160C6004962B1 /* DragonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonViewController.m; sourceTree = "<group>"; };
+		F29FC0EE195FB709008113E3 /* UsernamePrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsernamePrompt.h; sourceTree = "<group>"; };
+		F29FC0EF195FB709008113E3 /* UsernamePrompt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsernamePrompt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +121,12 @@
 				F24F0251195150E1004962B1 /* AppDelegate.h */,
 				F24F0252195150E1004962B1 /* AppDelegate.m */,
 				F24F0254195150E1004962B1 /* Main_iPhone.storyboard */,
-				F24F0257195150E1004962B1 /* Main_iPad.storyboard */,
 				F24F025A195150E1004962B1 /* ViewController.h */,
 				F24F025B195150E1004962B1 /* ViewController.m */,
 				F24F0286195160C6004962B1 /* DragonViewController.h */,
 				F24F0287195160C6004962B1 /* DragonViewController.m */,
+				F29FC0EE195FB709008113E3 /* UsernamePrompt.h */,
+				F29FC0EF195FB709008113E3 /* UsernamePrompt.m */,
 				F24F025D195150E1004962B1 /* Images.xcassets */,
 				F24F0249195150E1004962B1 /* Supporting Files */,
 			);
@@ -236,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F24F0259195150E1004962B1 /* Main_iPad.storyboard in Resources */,
 				F24F025E195150E1004962B1 /* Images.xcassets in Resources */,
 				F24F0256195150E1004962B1 /* Main_iPhone.storyboard in Resources */,
 				F24F024D195150E1004962B1 /* InfoPlist.strings in Resources */,
@@ -258,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29FC0F0195FB709008113E3 /* UsernamePrompt.m in Sources */,
 				F24F025C195150E1004962B1 /* ViewController.m in Sources */,
 				F24F0253195150E1004962B1 /* AppDelegate.m in Sources */,
 				F24F024F195150E1004962B1 /* main.m in Sources */,
@@ -298,14 +300,6 @@
 				F24F0255195150E1004962B1 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		F24F0257195150E1004962B1 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F24F0258195150E1004962B1 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		F24F026D195150E1004962B1 /* InfoPlist.strings */ = {

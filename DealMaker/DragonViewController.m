@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
 
-    self.label.text = self.text;//add text from field to label
+    self.label.text = [[NSUserDefaults standardUserDefaults] stringForKey:@"user"];//add text from device to label
 }
 
 - (void)didReceiveMemoryWarning

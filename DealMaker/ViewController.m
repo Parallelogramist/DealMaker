@@ -18,18 +18,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    if (![@"1" isEqualToString:
+          [[NSUserDefaults standardUserDefaults] objectForKey:@"loaded"]])
+    {
+        [[NSUserDefaults standardUserDefaults] setValue:@"1"
+                                             forKey:@"loaded"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        [self performSelector:@selector(loadAuthenticateViewController)
+                   withObject:nil
+                   afterDelay:0.0];
+    }
 }
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    if([segue.identifier isEqualToString:@"enter"]){
-        
-        DragonViewController *controller = (DragonViewController *)segue.destinationViewController;
-        controller.text = self.textField.text;
-    }
-    [self.textField resignFirstResponder];
-    
+-(void)loadAuthenticateViewController
+{
+    [ self performSegueWithIdentifier:@"usernamePrompt" sender:self ];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,9 +42,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self.textField resignFirstResponder];//hide keyboard
-}
-
 @end
