@@ -85,8 +85,9 @@
                                 <state key="normal" image="Red">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="Red_Pressed"/>
                                 <connections>
-                                    <segue destination="0T7-tZ-LLE" kind="modal" id="0Su-NR-208"/>
+                                    <segue destination="0T7-tZ-LLE" kind="modal" modalTransitionStyle="crossDissolve" id="0Su-NR-208"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,7 +148,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="cDJ-SM-qRO"/>
+                                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="cDJ-SM-qRO"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -169,6 +170,7 @@
     </scenes>
     <resources>
         <image name="Red" width="200" height="200"/>
+        <image name="Red_Pressed" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -34,6 +34,7 @@
     self.label.text = [NSString stringWithFormat:@"Hi, %@!",[[NSUserDefaults standardUserDefaults] stringForKey:@"user"]];//add text from device to label
     
     betTable = [NSArray arrayWithObjects:
+                @"Breakfast",
                 @"Ice Cream",
                 @"Beer",
                 @"A Shot",
@@ -42,6 +43,7 @@
                 nil];
     
     betImages = [ NSArray arrayWithObjects:
+                 [UIImage imageNamed:@"breakfast"],
                  [UIImage imageNamed:@"iceCream"],
                  [UIImage imageNamed:@"beer"],
                  [UIImage imageNamed:@"shot"],
