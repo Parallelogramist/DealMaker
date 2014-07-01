@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DragonViewController : UIViewController
+@interface DragonViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UILabel *label;
 @property (strong, nonatomic) NSString *text;
-@property (strong, nonatomic) IBOutlet UITableView *betTable;
 
 @end
